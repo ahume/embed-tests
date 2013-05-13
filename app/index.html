@@ -1,0 +1,38 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+        <script src="http://pasteup.guim.co.uk/js/lib/requirejs/2.1.5/require.min.js"></script>
+        <!-- endbuild -->
+    </head>
+    <body>
+    <div class="container">
+        <h1>Embeds</h1>
+        
+        <iframe class="api-embed" srcdoc="&lt;script&gt;document.write('a doc write');&lt;/script&gt; "></iframe>
+
+        <iframe class="api-embed" srcdoc="<div id='DC-note-60903' class='DC-note-container'></div><script src='http://s3.documentcloud.org/notes/loader.js'></script><script>dc.embed.loadNote('http://www.documentcloud.org/documents/371660/annotations/60903.js');
+</script>"></iframe>
+
+        <iframe class="api-embed" srcdoc="<div style='display:none'></div><script language='JavaScript' type='text/javascript' src='http://admin.brightcove.com/js/BrightcoveExperiences.js'></script><object id='myExperience2236632036001' class='BrightcoveExperience'><param name='bgcolor' value='#FFFFFF' /><param name='width' value='740 /><param name='height' value='432' /><param name='playerID' value='2236101142001' /><param name='playerKey' value='AQ~~,AAAB9FzAoQE~,N298q3_U8K7xy-MTZ9RJjmPgNFzzwACi' /><param name='isVid' value='true' /><param name='isUI' value='true' /><param name='dynamicStreaming' value='true' /><param name='@videoPlayer' value='2236632036001' /></object><script type='text/javascript'>brightcove.createExperiences();</script>" embed-url=""></iframe>
+
+        <iframe class="api-embed" srcdoc="<iframe src='http://www.youtube.com/embed/X_f7IqYEk-w' frameborder='0' allowfullscreen></iframe>" data-embed-url="http://www.youtube.com/watch?v=X_f7IqYEk-w" data-embed-width="560"></iframe>
+
+        <iframe class="api-embed" srcdoc="<iframe width='560' height='315' src='http://www.youtube.com/embed/X_f7IqYEk-w' frameborder='0' allowfullscreen></iframe>" data-embed-url="http://www.youtube.com/watch?v=X_f7IqYEk-w" data-embed-width="560"></iframe>
+
+    </div>
+    <script>
+        require(['scripts/iframe.embed.js'], function(embed) {
+            embed.enhance();
+        })
+    </script>
+</body>
+</html>
